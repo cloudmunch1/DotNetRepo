@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\nunit\Tests.Unit.Lender.Slos.Financial\Tests.Unit.Lender.Slos.Financial.nunit" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-08-13" time="09:58:58">
+  <environment nunit-version="2.6.0.12051" clr-version="2.0.50727.5448" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\nunit\Tests.Unit.Lender.Slos.Financial" machine-name="IP-0AC371B7" user="Administrator" user-domain="IP-0AC371B7" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\nunit\Tests.Unit.Lender.Slos.Financial\Tests.Unit.Lender.Slos.Financial.nunit" executed="True" result="Success" success="True" time="0.047" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Tests.Unit.Lender.Slos.Financial.dll" executed="True" result="Success" success="True" time="0.047" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Unit" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Lender" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="Slos" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                        <results>
+                          <test-suite type="Namespace" name="Financial" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="FixtureTests" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                                <results>
+                                  <test-suite type="ParameterizedTest" name="TestMethod_WithParameters" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                                    <results>
+                                      <test-case name="Tests.Unit.Lender.Slos.Financial.FixtureTests.TestMethod_WithParameters(2)" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                                      <test-case name="Tests.Unit.Lender.Slos.Financial.FixtureTests.TestMethod_WithParameters(0)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                                      <test-case name="Tests.Unit.Lender.Slos.Financial.FixtureTests.TestMethod_WithParameters(1)" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                                    </results>
+                                  </test-suite>
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

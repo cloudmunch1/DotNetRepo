@@ -1,0 +1,10 @@
+E:\tocopy\9781430240235\Pro .NET Best Prac\Chapter11\2_FxCop\Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.dll
+E:\tocopy\9781430240235\Pro .NET Best Prac\Chapter11\2_FxCop\Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.pdb
+E:\tocopy\9781430240235\Pro .NET Best Prac\Chapter11\2_FxCop\Lender.Slos.Financial\obj\Debug\ResolveAssemblyReference.cache
+E:\tocopy\9781430240235\Pro .NET Best Prac\Chapter11\2_FxCop\Lender.Slos.Financial\obj\Debug\Lender.Slos.Financial.dll
+E:\tocopy\9781430240235\Pro .NET Best Prac\Chapter11\2_FxCop\Lender.Slos.Financial\obj\Debug\Lender.Slos.Financial.pdb
+E:\temp\FxCop\Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.dll
+E:\temp\FxCop\Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.pdb
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\Lender.Slos.Financial.dll
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\Lender.Slos.Financial.pdb

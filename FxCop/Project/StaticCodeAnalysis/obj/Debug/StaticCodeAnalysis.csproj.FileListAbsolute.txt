@@ -1,0 +1,10 @@
+E:\temp\FxCop\Lender.Slos.Financial\bin\Debug\StaticCodeAnalysis.dll
+E:\temp\FxCop\Lender.Slos.Financial\bin\Debug\StaticCodeAnalysis.pdb
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\StaticCodeAnalysis.dll
+E:\temp\FxCop\Lender.Slos.Financial\obj\Debug\StaticCodeAnalysis.pdb
+E:\temp\FxCop\StaticCodeAnalysis\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\FxCop\StaticCodeAnalysis\bin\Debug\StaticCodeAnalysis1.dll
+E:\temp\FxCop\StaticCodeAnalysis\bin\Debug\StaticCodeAnalysis1.pdb
+E:\temp\FxCop\StaticCodeAnalysis\obj\Debug\StaticCodeAnalysis1.dll
+E:\temp\FxCop\StaticCodeAnalysis\obj\Debug\StaticCodeAnalysis1.pdb

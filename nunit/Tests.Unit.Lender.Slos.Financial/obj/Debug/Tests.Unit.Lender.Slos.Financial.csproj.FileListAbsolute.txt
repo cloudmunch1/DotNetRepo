@@ -1,0 +1,9 @@
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Tests.Unit.Lender.Slos.Financial.dll
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Tests.Unit.Lender.Slos.Financial.pdb
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.dll
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\nunit.framework.dll
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Lender.Slos.Financial.pdb
+C:\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\nunit.framework.xml
+C:\nunit\Tests.Unit.Lender.Slos.Financial\obj\Debug\ResolveAssemblyReference.cache
+C:\nunit\Tests.Unit.Lender.Slos.Financial\obj\Debug\Tests.Unit.Lender.Slos.Financial.dll
+C:\nunit\Tests.Unit.Lender.Slos.Financial\obj\Debug\Tests.Unit.Lender.Slos.Financial.pdb

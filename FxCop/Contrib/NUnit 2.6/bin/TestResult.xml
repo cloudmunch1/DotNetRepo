@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\temp\nunit\Tests.Unit.Lender.Slos.Financial\Tests.Unit.Lender.Slos.Financial.nunit" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-07-03" time="21:57:15">
+  <environment nunit-version="2.6.0.12051" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6\bin" machine-name="VIN-PC" user="vin" user-domain="vin-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="E:\temp\nunit\Tests.Unit.Lender.Slos.Financial\Tests.Unit.Lender.Slos.Financial.nunit" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="E:\temp\nunit\Tests.Unit.Lender.Slos.Financial\bin\Debug\Tests.Unit.Lender.Slos.Financial.dll" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Unit" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Lender" executed="True" result="Failure" success="False" time="0.003" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="Slos" executed="True" result="Failure" success="False" time="0.003" asserts="0">
+                        <results>
+                          <test-suite type="Namespace" name="Financial" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="CalculatorTests" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+                                <results>
+                                  <test-suite type="ParameterizedTest" name="RatePerMonth_WithValidAnnualPercentageRate_ExpectProperRatePerPeriod" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+                                    <results>
+                                      <test-case name="Tests.Unit.Lender.Slos.Financial.CalculatorTests.RatePerMonth_WithValidAnnualPercentageRate_ExpectProperRatePerPeriod(7.09m,0.005909m)" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                                        <failure>
+                                          <message><![CDATA[  Expected: 0.005909m
+  But was:  0.005908m
+]]></message>
+                                          <stack-trace><![CDATA[at Tests.Unit.Lender.Slos.Financial.CalculatorTests.RatePerMonth_WithValidAnnualPercentageRate_ExpectProperRatePerPeriod(Decimal annualPercentageRate, Decimal expectedRatePerPeriod) in e:\temp\nunit\Tests.Unit.Lender.Slos.Financial\CalculatorTests.cs:line 84
+]]></stack-trace>
+                                        </failure>
+                                      </test-case>
+                                    </results>
+                                  </test-suite>
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

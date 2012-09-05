@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Rebuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <MSBuildCommunityTasksPath>.</MSBuildCommunityTasksPath>
+    <ExtensionTasksPath>.\</ExtensionTasksPath>
+  </PropertyGroup>
+
+  <!-- Required Import to use tasks and targets -->
+  <Import Project=".\Build\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+  <Import Project=".\Build\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks"/>
+
+  <PropertyGroup>
+	<Dest>$(MSBuildProjectDirectory)\Output\</Dest>
+    <ToolsPath>C:\Tools</ToolsPath>
+    <ProjectPath>MvcApplication1</ProjectPath>
+	<SourceFolder>.</SourceFolder>
+
+    <BuildPath Condition=" '$(BuildPath)'==''">.\Build</BuildPath>
+
+    <ArtifactsPath Condition=" '$(ArtifactsPath)'==''">.\Artifacts</ArtifactsPath>
+    <OutputPath Condition="'$(OutputPath)' == ''">$(ArtifactsPath)\Output</OutputPath>
+
+    <!-- Define Constants for Conditional Compilation -->
+    <DefineConstants Condition=" '$(DefineConstants)'==''">DEBUG;TRACE</DefineConstants>
+
+    <BUILD_NUMBER Condition=" '$(BUILD_NUMBER)'==''">3.5.7.11</BUILD_NUMBER>
+      
+  </PropertyGroup>
+
+
+  <!-- Target for Preconditions -->
+  <Target Name="Preconditions" >
+    <MakeDir Condition="!Exists('$(ArtifactsPath)')"
+             Directories="$(ArtifactsPath)"
+             />
+
+    <MakeDir Condition="!Exists('$(OutputPath)')"
+             Directories="$(OutputPath)"
+             />
+
+    <Delete Condition="Exists('$(ProjectPath).log')"
+            Files="$(ProjectPath).log"
+            />
+
+    <!-- The lines are semicolon separated -->
+    <WriteLinesToFile File="$(ProjectPath).log"
+                      Lines="This is the first line;This is the second line with a semicolon (%3B) character;This is the third line"
+                      />
+
+  </Target>
+
+  <!-- Define Constants for Building -->
+  <ItemGroup>
+    <SolutionToBuild Include="$(ProjectPath)\**\*.csproj" />
+  </ItemGroup>
+
+  <!-- Target for Building -->
+  <Target Name="Rebuild"
+          DependsOnTargets="SetUp;Build;CleanUp"
+          />
+
+  <Target Name="SetUp"
+          DependsOnTargets="AssemblyInformation"
+          />
+
+  <Target Name="AssemblyInformation" >
+    <ItemGroup>
+      <AssemblyInfoFiles Include="$(SourceFolder)\**\AssemblyInfo.cs" />
+    </ItemGroup>
+
+    <Time Format="yyyy">
+      <Output TaskParameter="FormattedTime" PropertyName="CurrentYear" />
+    </Time>
+
+    <PropertyGroup>
+      <AssemblyCompany>Lender Inc.</AssemblyCompany>
+      <AssemblyCopyright>© $(CurrentYear) $(AssemblyCompany) All rights reserved.</AssemblyCopyright>
+      <AssemblyVersion>$(BUILD_NUMBER)</AssemblyVersion>
+      <AssemblyFileVersion>$(BUILD_NUMBER)</AssemblyFileVersion>
+    </PropertyGroup>
+
+    <MSBuild.ExtensionPack.Framework.AssemblyInfo
+      AssemblyInfoFiles="@(AssemblyInfoFiles)"
+      AssemblyCompany="$(AssemblyCompany)"
+      AssemblyCopyright="$(AssemblyCopyright)"
+      AssemblyVersion="$(AssemblyVersion)"
+      AssemblyFileVersion="$(AssemblyFileVersion)"
+      />
+  </Target>
+
+  <Target Name="Build"
+          DependsOnTargets="Preconditions"
+          >
+
+    <WriteLinesToFile File="$(ProjectPath)\output.log"
+                      Lines="Rebuilding ... "
+                      />
+
+    <PropertyGroup>
+      <SolutionNames>@(SolutionToBuild)</SolutionNames>
+
+    </PropertyGroup>
+
+    <WriteLinesToFile File="$(ProjectPath)\output.log"
+                      Lines="$(SolutionNames)'"
+                      />
+
+    <MSBuild Projects="@(SolutionToBuild)"
+             Targets="Rebuild"
+	     BuildInParallel="true"
+             Properties="Configuration=$(Configuration);DefineConstants=$(DefineConstants)"
+             />
+
+    <WriteLinesToFile File="$(ProjectPath)\output.log"
+                      Lines="Done."
+                      />
+  </Target>
+
+  <Target Name="CleanUp" >
+	
+    <ItemGroup>
+	  <SourceFiles Include="$(ProjectPath)\**\bin\**\*.dll" />
+	  <SourceFiles Include="$(ProjectPath)\**\bin\**\*.exe" />
+    </ItemGroup>
+
+   
+   
+
+<Copy SourceFiles="@(SourceFiles)" DestinationFiles="@(SourceFiles->'$(Dest)\%(RecursiveDir)%(Filename)%(Extension)')" />
+
+  </Target>
+
+<Target Name="AfterBuild"  DependsOnTargets="Build" >
+<Message Text="Build has completed!" Importance="high" />
+</Target>
+</Project>
